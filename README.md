@@ -1,4 +1,4 @@
-# Clustering Case Study - Customer Segmentation with K-Means - Tier 3#
+## Clustering Case Study - Customer Segmentation with K-Means - Tier 3
 
 ## Date and Time
 - Created/Updated: July 15, 2025, 06:59 PM PDT

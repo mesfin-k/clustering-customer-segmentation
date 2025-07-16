@@ -1,18 +1,33 @@
-Customer Segmentation with K-Means Clustering
-Description
-This project uses K-Means and other clustering algorithms for customer segmentation on a wine marketing dataset. It covers data loading, wrangling, K-Means with Elbow and Silhouette methods, PCA visualization, and additional clustering techniques.
+README - Wine Customer Segmentation Project
+==========================================
 
-Prerequisites
-Python 3+
-Libraries: pandas, numpy, scikit-learn, matplotlib
-Install with: pip install pandas numpy scikit-learn matplotlib
+Date: July 15, 2025
+Time: 06:59 PM PDT
 
-How to Run
-Place WineKMC.xlsx in the directory.
-Open and run the notebook in Jupyter.
+Overview
+--------
+This project analyzes a dataset of 100 customers' responses to 32 exclusive wine offers to perform customer segmentation using clustering algorithms. The dataset, stored in "WineKMC.xlsx," includes offer details (e.g., varietal, discount, origin) and transaction data. The goal is to identify natural customer groups for targeted marketing strategies.
+
 Files
-Clustering Case Study - Customer Segmentation with K-Means - Tier 3.ipynb: Main notebook.
+-----
+- WineKMC.xlsx: Contains two sheets - "OfferInformation" and "Transactions" with customer and offer data.
+- Clustering Case Study - Customer Segmentation with K-Means - Tier 3.ipynb: Jupyter notebook with code and analysis.
+
+Methodology
+-----------
+- Data Wrangling: Created a customer-offer matrix (100x32) using pandas pivot_table.
+- Clustering: Applied K-Means, Affinity Propagation, Spectral Clustering, Agglomerative Clustering, and DBSCAN.
+- Evaluation: Used Elbow Method, Silhouette Score, and PCA for dimensionality reduction and visualization.
+- Optimal K: Silhouette Method suggested K=9 (score 0.1466), while Elbow Method and Spectral Clustering favored K=3 (score 0.224).
+
 Results
-Optimal K from Silhouette: 9 (~0.147).
-Spectral Clustering best with K=3 (0.224).
-PCA (2 components): ~21.5% variance.
+-------
+- Best Algorithm: Spectral Clustering (3 clusters, Silhouette Score 0.224).
+- PCA Variance: 21.5% explained in 2D, indicating limited representation.
+- Challenges: Sparse, high-dimensional data led to weak clustering structure.
+
+Next Steps
+----------
+- Feature engineering.
+- Test higher dimensions.
+- Explore additional algorithms.
